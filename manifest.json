@@ -1,0 +1,25 @@
+{
+  "name": "Riverside Farmers Market of Louisiana",
+  "short_name": "Riverside Farmers Market of Louisiana",
+  "start_url": "https://riversidemarketla.com",
+  "icons": [
+    {
+      "src": "\/assets\/content\/Logo.png",
+      "sizes": "168x168",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "categories": ["food"],
+  "description": "Riverside Farmers Market of Louisiana - Open every Saturday 9-2 and 3rd Sunday 10-2 at 45020 Manny Guitrau, Prairieville",
+  "lang": "en-US",
+  "screenshots": [
+    {
+      "src": "\/assets\/content\/screenshot.png",
+      "sizes": "1750x931",
+      "type": "image\/png"
+    }
+  ]
+}
