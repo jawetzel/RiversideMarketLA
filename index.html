@@ -45,6 +45,12 @@
             height: 250px;
             object-fit: cover;
         }
+
+		.vendor-img-fluid {
+			width: 100%; /* Ensures the image fills its column width */
+			height: 200px; /* Set a fixed height that suits your layout */
+			object-fit: cover; /* Crops the image to fill the container while maintaining aspect ratio */
+		}
     </style>
 
 </head>
@@ -162,17 +168,23 @@
 
 						</div>
 						<div class="col-md-6 p-4">
-							<div class="mb-4"><img  class="img-fluid" src="./assets/Flier.PNG"></div>
-							<div class="mb-4"><img  class="img-fluid" src="./assets/content/site.jpg"></div>
-							<div class="mb-4"><img  class="img-fluid" src="./assets/content/veggies.jpg"></div>
-							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none"><img  class="img-fluid" src="./assets/content/bread.jpg"></div>
-							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none"><img  class="img-fluid" src="./assets/content/jams.jpg"></div>
-							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none"><img  class="img-fluid" src="./assets/content/popcorn.jpg"></div>
-							<div class="mb-4 d-none d-sm-block d-md-block d-lg-none d-xl-none">
-								<img  class="img-fluid" src="./assets/content/lemonaid.jpg">
+							<div class="mb-4"><img alt="flier image" class="img-fluid" src="./assets/Flier.PNG"/></div>
+							<div class="mb-4"><img alt="grounds image" class="img-fluid" src="./assets/content/site.jpg"/></div>
+							<div class="mb-4"><img alt="veggies image" class="img-fluid" src="./assets/content/veggies.jpg"/></div>
+							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none">
+								<img alt="bread image"  class="img-fluid" src="./assets/content/bread.jpg"/>
+							</div>
+							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none">
+								<img alt="jams image" class="img-fluid" src="./assets/content/jams.jpg"/>
+							</div>
+							<div class="mb-4 d-none d-sm-block d-md-block d-lg-block d-xl-none">
+								<img alt="popcorn image" class="img-fluid" src="./assets/content/friends/bayoupoppers/popcorn.jpg"/>
 							</div>
 							<div class="mb-4 d-none d-sm-block d-md-block d-lg-none d-xl-none">
-								<img  class="img-fluid" src="./assets/content/jamba.jpg">
+								<img alt="lemon-aid image" class="img-fluid" src="./assets/content/lemonaid.jpg"/>
+							</div>
+							<div class="mb-4 d-none d-sm-block d-md-block d-lg-none d-xl-none">
+								<img alt="jambalaya image" class="img-fluid" src="./assets/content/jamba.jpg"/>
 							</div>
 
 
@@ -194,9 +206,10 @@
 							<h2 class="text-center mb-4">Friends of RiverSide Farmers Market</h2>
 						</div>
 					</div>
-					<div class="row  border border-1 border-secondary">
-						<div class="col-12 p-3">
-							<div class="row">
+					<div class="row">
+						<div class="col-12">
+							<!-- Bayou poppers -->
+							<div class="row mb-4 p-3 border border-1 border-light-secondary">
 								<div class="col-lg-5">
 									<h3>Bayou Poppers Kettle Corn</h3>
 									<p>Bayou Poppers serves up freshly popped kettle corn, offering a sweet and salty
@@ -216,12 +229,80 @@
 								<div class="col-lg-7">
 									<div class="row">
 										<div class="col-6">
-											<img  class="img-fluid" src="./assets/content/popcorn.jpg"></div>
+											<img alt="Bayou Poppers Kettle Corn Popcorn Image" class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/bayoupoppers/popcorn.jpg"/>
+										</div>
+										<div class="col-6">
+											<img alt="Bayou Poppers Kettle Corn Popcorn Image" class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/bayoupoppers/popcorn2.jpg"/>
 										</div>
 									</div>
-
 								</div>
 							</div>
+							<!-- Heart of Bohemia -->
+							<div class="row mb-4 p-3 border border-1 border-light-secondary">
+								<div class="col-lg-5">
+									<h3>Heart of Bohemia</h3>
+									<p>Heart of Bohemia serves up refreshing lemonade, flavorful snowballs, and tasty
+										nachos, bringing a perfect mix of cool treats and savory snacks to your market
+										experience. It’s your go-to stop for a delicious and refreshing break.</p>
+									<p>
+										<a target="_blank" rel="noreferrer noopener"
+										   title="External Link - Heart of Bohemia Facebook"
+										   href="https://www.facebook.com/profile.php?id=100063979784281">
+											<svg aria-hidden="true" width="40" height="40" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+												<path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+											</svg>
+
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-7">
+									<div class="row">
+										<div class="col-6">
+											<img alt="Heart of Bohemia Drink Image"  class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/heartofbohemia/drinks1.jpg"/>
+										</div>
+										<div class="col-6">
+											<img alt="Heart of Bohemia Image" class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/heartofbohemia/drinks2.jpg"/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- The Farmers Darlin -->
+							<div class="row mb-4 p-3 border border-1 border-light-secondary">
+								<div class="col-lg-5">
+									<h3>The Farmers Darlin</h3>
+									<p>The Farmers Darlin – Fresh, locally grown produce. A trusted regular at the
+										Riverside Farmers Market, The Farmers Darlin consistently offers high-quality,
+										seasonal fruits and vegetables straight from the farm to your table.</p>
+									<p>
+										<a target="_blank" rel="noreferrer noopener"
+										   title="External Link - The Farmers Darlin Facebook"
+										   href="https://www.facebook.com/thefarmersdarlin">
+											<svg aria-hidden="true" width="40" height="40" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+												<path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+											</svg>
+
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-7">
+									<div class="row">
+										<div class="col-6">
+											<img alt="The Farmers Darlin Veggies Image"  class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/farmersdarlin/veggies1.jpg"/>
+										</div>
+										<div class="col-6">
+											<img alt="The Farmers Darlin Veggies Image" class="img-fluid vendor-img-fluid"
+												 src="./assets/content/friends/farmersdarlin/veggies2.jpg"/>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
                 </div>
